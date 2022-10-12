@@ -1,0 +1,151 @@
+/*Estilos principales*/
+header{
+	background-color:  #f4d03f;
+	position: fixed;
+  height: 100px;
+}
+h1{
+	color: black;
+  font-family: arial;
+  font-size: 15px;
+}
+footer{
+	background-color: #f4d03f ;
+	color: black;
+}
+p{
+	text-align: center;
+}
+figure{
+  color: red;
+}
+h6{
+  text-decoration: line-through red 2px;
+}
+/*Logos de Cabeceras*/
+#cabecera1{
+	background-image: url(../img/header/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#cabecera2{
+	background-image: url(../img/header/telefono.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#cabecera3{
+	background-image: url(../img/header/logo1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*Slider */
+.container{
+  overflow: hidden;
+  background-color: #f2f2f2;
+}
+
+.slider{
+}
+
+.slider__container{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  background-color: white;
+  gap: 1em;
+}
+
+.slider__body{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr max-content;
+  transition: opacity 1.5s;
+}
+
+.slider__body--show{
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.slider__img {
+  width: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.slider__arrow{
+  cursor: pointer;
+  width: 50%;
+}
+.slider__arrow:hover{
+  width: 80%;
+  transition: 0.5s;
+}
+.slider__arrow:nth-of-type(2){
+  justify-self: end;
+}
+
+/*Estilos de cajas*/
+#caja{
+  text-align: center;
+}
+#caja:hover{
+	border-radius: 5px;
+	color: black;
+}
+#destacados{
+  width: 60%;
+  transition: all 0.5s ease-in-out;
+  float: left;
+}
+#destacados:hover{
+  width: 63%;
+  transition: all 1s ease-in-out;
+}
+.container-fluid{
+	margin-left: auto;
+
+
+}
+
+
+#img-slide{
+  width: 400px;
+  height: 350px;
+}
+.menu{
+  width: auto;
+  border-radius: 100px;
+  background-color: transparent;
+  height: 30px;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 2px;
+  color: black;
+  font-size: 10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+.menu ul li a:hover {
+  color: white;
+  font-size: 15px;
+}
+.menu ul li a:target {
+  border-bottom-color: #F44336;
+}
